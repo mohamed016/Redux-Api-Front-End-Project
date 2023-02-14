@@ -1,0 +1,26 @@
+.sidebar {
+    background-color: gainsboro;
+    width: 25%;
+    height: calc(100vh - 51px);
+    overflow: auto;
+}
+ul{
+    margin-top:50px;
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+    list-style: none;
+}
+
+ul li {
+   
+}
+
+a {
+    background-color: brown;
+    display: block;
+    margin:10px;
+    text-decoration: none;
+    color: #fff;
+
+}
