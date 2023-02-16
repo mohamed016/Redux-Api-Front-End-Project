@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 //success
 //error
 export const addUserWithCreateAsyncThunk = createAsyncThunk('add/user', async (user) => {
-    const { data } = await axios.post("http://localhost:5000/api/users", user)
+    const { data } = await axios.post("https://redux-api-back-end-project.onrender.com/api/users", user)
     return data;
 })
 
