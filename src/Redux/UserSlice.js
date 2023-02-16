@@ -24,7 +24,6 @@ const userSlice = createSlice({
     reducers: {
         addUserWithDefault: (state, action) => {
             state.userData = action.payload;
-            console.log(action.payload.name)
         },
         start: (state) => {
             state.loading = true;
@@ -43,12 +42,10 @@ const userSlice = createSlice({
             state.loading = true;
         },
         [addUserWithCreateAsyncThunk.fulfilled]: (state, action) => {
-            console.log(action.payload)
             state.loading = null;
             state.userData = action.payload
         },
         [addUserWithCreateAsyncThunk.rejected]: (state) => {
-            console.log("k;l;l")
             state.loading = false
         }
     }
